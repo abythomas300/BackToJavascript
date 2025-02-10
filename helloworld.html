@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let firstname = "Aby"
+        const secondname = "Thomas"
+        console.log("Your full name is "+firstname+" "+secondname)
+        firstname = "Andrew"
+        console.log("Your full name is "+firstname+" "+secondname)
+        
+
+        function Demonstration(){            var num = 100;
+            if(num == 100){
+                let num1 = 200;
+               console.log("Function executed");
+               console.log("Values of num1 is"+num1);
+            }
+
+        console.log("Value of the first number: "+num);
+        // console.log("Value of the second number: "+num1); -- this will throw an error.
+        }
+
+        Demonstration();
+
+
+        const pi = 3.14
+        console.log("Value of pi is "+pi);
+        // console.log("Value of pi is "+pi);  -- this will throw an error.
+
+        console.log(23+97);
+
+        console.log(43+7+98+5+111+6+98);
+
+        console.log((4+6+9)/77);
+
+
+        let a  = 10;
+        console.log(a);
+        a = 450;
+        console.log(a);
+        let b = 7 * a;
+        console.log(b);
+
+        max = 57;
+        const actual = max - 3;
+        console.log(actual / max)
+
+        let planetName = "Mars";
+        let currentUser = "root";
+
+        let extraLargeNumber = 125e25;
+        console.log(extraLargeNumber);
+
+        let imposter = "100";
+        console.log(isNaN(imposter))
+
+       let i = 1;
+    //    while(i < Infinity){
+    //       console.log(i);
+    //       i++;
+    //    }  -- dangerous code, makes the system go brrrrr.
+
+
+    function trickyLoop(){
+        for(i=0;i<10;i++){
+       return i;
+    }
+    }
+
+    console.log(trickyLoop());
+
+
+
+
+    const lotsOfDecimal = 1.766584958675746364;
+    console.log(lotsOfDecimal);
+    const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+    console.log(twoDecimalPlaces);
+
+
+    </script>
+</body>
+</html>
