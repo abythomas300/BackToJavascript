@@ -132,8 +132,12 @@ console.log(text.replace("Lockheed Martin","Dassault"));
 console.log("Mario"> "Luigi")//based on lexographical or alphabetical order
 
 
-alert(false || false || false || false || false || false)
-
+//multiple conditions inside the ternary conditional operator
+let age = prompt("Enter your age", 18);
+let result = (age>0&&age<=10)?alert("Hello Baby!"): 
+age<=19? alert("Hello Teenager!"): 
+age<80? alert("Hello Uncle") : 
+alert("Unusual Age, suspicious..");
     </script>
 </body>
 </html>
