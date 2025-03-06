@@ -1,0 +1,7 @@
+JS is a single threaded programming language.
+This means that JS engine has only one call stack.
+Therefore, it can only do one task at a time.
+It may cause time wastage(Talking about time in terms of ms.)
+
+To increase efficiency of single threaded engine, we use asynchronous programming.
+That means doing another task while waiting for the previous task to get completed.
