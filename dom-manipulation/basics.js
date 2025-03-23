@@ -37,3 +37,5 @@ container.appendChild(newDiv);
   newParagraph.classList.add("newParagraph");
   newParagraph.style.fontStyle = "cursive";
   newDiv.append(newParagraph);
+
+  console.log(window.innerHeight);

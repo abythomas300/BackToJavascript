@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+  </head>
+  <body>
+      <section>
+        <img src="coffee.jpg" alt="Coffee" width="500px" height="400px">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/" class="link-class">Mozilla homepage</a></p>
+      </section>
+      <script>
+        const link = document.querySelector(".link-class");
+        link.textContent = "Mozilla Developer Network";
+        link.href = "https://developer.mozilla.org";
+
+        const sect = document.querySelector("section");
+        const para = document.createElement("p");
+        para.textContent =  "Hope is not a strategy.";
+        sect.appendChild(para);
+
+        const text = document.createTextNode("- the premier source for web development knowledge.");
+        const linkPara = document.querySelector("p");
+        linkPara.appendChild(text);
+
+        para.remove();
+      </script>
+  </body>
+</html>

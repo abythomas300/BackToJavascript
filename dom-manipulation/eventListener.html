@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Info</title>
+</head>
+<body>
+    <button id="myButton">Double click here to print the event information.</button>
+    <p id="myPara1"></p>
+    <p id="myPara2"></p>
+</body>
+<script>
+    const button = document.querySelector("#myButton");
+    const paragraph1 = document.querySelector("#myPara1");
+    const paragraph2 = document.querySelector("#myPara2");
+    button.addEventListener("dblclick",(e)=>{
+        e.target.style.background = "black";
+        e.target.style.color = "white";
+        paragraph1.textContent = `Your button click has made an ${e} event to happen.`;
+        paragraph2.textContent = `You have pressed ${e.target}`;
+    });
+</script>
+</html>
