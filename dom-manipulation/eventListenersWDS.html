@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners Web Dev Simplified</title>
+    <script src="eventListenersWDS.js" defer></script>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .grandparent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            width: 200px;
+            height: 200px;  
+        }
+        .child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hotpink;
+            width: 100px;
+            height: 100px; 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="grandparent">
+            <div class="parent">
+                <div class="child">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
