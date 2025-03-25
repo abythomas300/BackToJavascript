@@ -1,0 +1,1 @@
+document.addEventListener("click",()=>console.log("You have clicked on the body."));
