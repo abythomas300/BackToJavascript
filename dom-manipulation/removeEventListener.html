@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove event listener example</title>
+</head>
+<body>
+    <h1>Example For .removeEventListener</h1>
+    <div class="container">
+        <p>You can click on any of these buttons how many times you want. Note that the second button will deactivate the random letter generating module, which will inturn stop the letter generation.</p>
+        <div class="number-container">
+            <h3 class="number-header">*Random number will appear here.*</h3>
+        </div>
+        <div class="letter-container">
+            <h3 class="letter-header">*Random letter will appear here.*</h3>
+        </div>
+        <div class="generate-button">
+            <button>Generate</button>
+        </div>
+        <div class="deactivate-button">
+            <button style="color: red;">Deactivate letter Generation module</button>
+        </div>
+        <div class="stop-warning-container">
+            <p class="stop-warning" style="color: #e9d502;"></p>
+        </div>
+    </div>
+</body>
+<script>
+    const body = document.body;
+    const numberPanel = body.querySelector(".number-container");
+    const letterPanel = body.querySelector(".letter-container");
+    const generateBtn = body.querySelector(".generate-button");
+    const deactivateBtn = body.querySelector(".deactivate-button");
+    const stopWarning = body.querySelector(".stop-warning");
+    generateBtn.addEventListener("click",generateRandomLetter);
+    generateBtn.addEventListener("click",generateRandomNo);
+    deactivateBtn.addEventListener("click",()=>{
+        generateBtn.removeEventListener("click",generateRandomLetter);
+        stopWarning.textContent = "Warning: Letter generation module has been stopped.";
+    });
+
+
+    function generateRandomNo(){
+         numberPanel.textContent = Math.floor(Math.random()*1000);
+    }
+
+    function generateRandomLetter(){
+        const dict = "qwertyuiopasdfghjklzxcvbnm";
+        letterPanel.textContent = dict.charAt(Math.floor(Math.random()*25));
+    }
+
+    
+    
+
+</script>
+</html>
