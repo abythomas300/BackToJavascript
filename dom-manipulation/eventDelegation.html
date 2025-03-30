@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-container{
+            width: 630px;
+            height: 630px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2px;
+            background-color: grey;
+        }
+        .red{
+            width: 305px;
+            height: 305px;
+            background-color: red;
+        }
+        .green{
+            width: 305px;
+            height: 305px;
+            background-color: green;    
+        }
+        .blue{
+            width: 305px;
+            height: 305px;
+            background-color: blue;
+            
+        }
+        .yellow{
+            width: 305px;
+            height: 305px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="yellow"></div>
+        </div>
+    </div>
+    <p class="message-box"></p>
+
+    <script>
+      const mainContainer = document.querySelector(".main-container");
+      const yellow = document.querySelector(".yellow");
+      const red = document.querySelector(".red");
+      const green = document.querySelector(".green");
+      const blue = document.querySelector(".blue");
+      const message = document.querySelector(".message-box");
+    //   yellow.addEventListener(("click"),()=>{
+    //     message.textContent = "You have clicked the yellow button.";
+    //   });
+    //   red.addEventListener(("click"),()=>{
+    //     message.textContent = "You have clicked the red button.";
+    //   });
+    //   green.addEventListener(("click"),()=>{
+    //     message.textContent = "You have clicked the green button.";
+    //   });
+    //   blue.addEventListener(("click"),()=>{
+    //     message.textContent = "You have clicked the blue button.";
+    //   });
+
+    mainContainer.addEventListener("click",e=>{
+        if(e.target.matches(".red")){
+            message.textContent = "You have clicked the red button.";
+        }else if(e.target.matches(".green")){
+            message.textContent = "You have clicked the green button.";
+        }else if(e.target.matches(".blue")){
+            message.textContent = "You have clicked the blue button.";
+        }else{
+            message.textContent = "You have clicked the yellow button.";
+        }
+    });    
+
+    </script>
+
+</body>
+</html>
