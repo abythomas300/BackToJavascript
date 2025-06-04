@@ -1,0 +1,97 @@
+/* Import & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('subway.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* Glass container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ff5252;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#increment-btn {
+    background-color: #ff5252;
+}
+
+#increment-btn:hover {
+    background-color: #e04848;
+    transform: translateY(-2px);
+}
+
+#save-btn {
+    background-color: #4caf50;
+}
+
+#save-btn:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+
