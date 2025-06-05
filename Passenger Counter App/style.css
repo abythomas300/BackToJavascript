@@ -65,6 +65,7 @@ button {
 #increment-btn:hover {
     background-color: #e04848;
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 
@@ -75,6 +76,7 @@ button {
 #save-btn:hover {
     background-color: #43a047;
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 /* Responsive Adjustments */
