@@ -1,0 +1,19 @@
+[
+    { 
+        "CompanyName":"Tesla",
+        "CEO":"Elon Musk",
+        "Industry": ["Automobile", "Energy"]
+    },
+
+    {
+        "CompanyName":"Amazon",
+        "CEO":"Jeff Bezos",
+        "Industry": "Retail"
+    },
+
+    {
+        "CompanyName":"Louis Vitton",
+        "CEO":"Bernard Assault",
+        "Industry": "Fashion"
+    }
+]

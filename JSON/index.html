@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Demo</title>
+</head>
+<body>
+    <h1>JSON Demo</h1>
+</body>
+<script>
+    let j = `[
+    { 
+        "CompanyName":"Tesla",
+        "CEO":"Elon Musk",
+        "Industry": ["Automobile", "Energy"]
+    },
+
+    {
+        "CompanyName":"Amazon",
+        "CEO":"Jeff Bezos",
+        "Industry": "Retail"
+    },
+
+    {
+        "CompanyName":"Louis Vitton",
+        "CEO":"Bernard Assault",
+        "Industry": "Fashion"
+    }
+]`
+
+console.log("As a string:: \n", j);
+let data = JSON.parse(j)  //This method converts a string json into it's original form (SO COOL!)
+
+console.log(data[0].Industry[0]);  // getting a value from an array nested inside an object.
+
+
+
+let myObject = { //A normal object
+    name:"John Doe",
+    age:20,
+    place:"UAE"
+}
+console.log(myObject);
+
+let jString = JSON.stringify(myObject);  //This method converts an object into a .json format
+console.log(jString)
+
+
+</script>
+</html>
